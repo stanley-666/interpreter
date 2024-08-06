@@ -1,7 +1,7 @@
 
-# include <sstream> // to string
-# include <stdlib.h>
-# include <math.h>
+#include <sstream> // to string
+#include <stdlib.h>
+#include <math.h>
 #include "parser.h"
 
 
