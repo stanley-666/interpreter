@@ -1,4 +1,4 @@
-# compiler-by-C++
+# Compiler Implementation C++
 
 For this project, an interpreter that is capable of interpreting commands that are specified using the following syntax.  
 ```
