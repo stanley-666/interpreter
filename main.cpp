@@ -1,4 +1,4 @@
-// 10820117 李政昇
+
 # include <sstream> // to string
 # include <stdlib.h>
 # include <math.h>
