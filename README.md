@@ -25,6 +25,16 @@ increase caculate speed, error manager decision
 4.type error
 5.Implement stack and function call 
 ```
+# Interface
+## Scanner(Tokenizer)
+
+## Parser(Syntax Analyzer)
+
+## ErrorManager
+
+## Calculator
+
+
 
 # For CYCU ourC's structures
 
@@ -317,5 +327,5 @@ Error
 
 > a:bc
 
-# Design class
+
 
