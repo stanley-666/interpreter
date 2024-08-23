@@ -1,5 +1,33 @@
 # Compiler Implementation C++
+## setup
+```
+vscode, coderunner or any others C/C++ compiler
+```
 
+## Features
+```
+1.Tokenizer
+2.Syntax analyser
+3.declare variables, +, -, *, /, compare, comment operation
+4.calculator
+
+```
+
+## Future enhancements
+```
+increase caculate speed, error manager decision
+```
+
+# On the roadmap
+```
+1.Symbol table for declare a function
+2.ListAllfunction, ListAllVariable
+3.trace line number
+4.type error
+5.Implement stack and function call 
+```
+
+## For CYCU ourC's syntax structures
 For this project, an interpreter that is capable of interpreting commands that are specified using the following syntax.  
 ```
   <Command>      ::= <Statement> ';' | <BooleanExp> ';' | <ArithExp> ';' | QUIT  
@@ -51,7 +79,7 @@ There are three kinds of errors : error on the token level, error on the syntax 
   Unexpected token : '*'                               // syntactic error (token recognized) -- 第二道防線
   Undefined identifier : 'bcd'                       // semantic error (grammar OK) -- 第三道防線
 
-抓error的順序如下：
+## 抓error的順序如下：
 
   第一防線： Unrecognized token with first char
   
@@ -64,4 +92,10 @@ Of course, there may be errors that are neither "unrecognized token error" nor "
 ...
 > 3/0
 Error
+
+
+
 > a:bc
+
+# Design class
+
