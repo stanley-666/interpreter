@@ -43,3 +43,25 @@ It may be desirable to implement a recursive descent parser in writing your prog
   <Term>                  ::= <Factor> { '*' <Factor> | '/' <Factor> }  
   <Factor>                ::= IDENT | [ SIGN ] NUM | '(' <ArithExp> ')'  
 ```
+
+
+There are three kinds of errors : error on the token level, error on the syntax level, error on the semantics level
+
+  Unrecognized token with first char : '$'   // lexical error (error on the token level)  -- 第一道防線
+  Unexpected token : '*'                               // syntactic error (token recognized) -- 第二道防線
+  Undefined identifier : 'bcd'                       // semantic error (grammar OK) -- 第三道防線
+
+抓error的順序如下：
+
+  第一防線： Unrecognized token with first char
+  
+  第二防線(token recognized, parse grammar)： Unexpected token
+  
+  第三防線(grammar OK, evaluate it)：Undefined identifier
+
+Of course, there may be errors that are neither "unrecognized token error" nor "syntax error" nor "undefined ID error".  When there is such an error (e.g., division by zero), your program should just output 'Error'. E.g.,
+
+...
+> 3/0
+Error
+> a:bc
